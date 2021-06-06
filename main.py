@@ -36,14 +36,7 @@ def get_page_informatrion(search):
 
     url = 'https://library.ym.edu.tw/search*cht/a?searchtype=t&searcharg=' + search + '&SORT=D&searchscope=7&submit.x=23&submit.y=14'
     script = 'window.open("'+url+'");'
-    driver.execute_script(script)
-
-    script = 'window.open("")'
-
-
-
-
-    
+    driver.execute_script(script)    
 
     url = 'https://webpac.lib.nctu.edu.tw/F/GNE9AIMJL5RV3S9TV25T7DXGS9GL6IH6LACCJ7RTL5GBQY594N-07012?func=find-b&find_code=WTI&request=' + search +'&local_base=TOP01&adjacent=1'
     script = 'window.open("'+url+'");'
@@ -54,10 +47,6 @@ def get_page_informatrion(search):
     driver.execute_script(script)
 
     
-    
-    # url = 'https://eds.b.ebscohost.com/eds/results?vid=0&sid=a9ac0916-e078-4f81-9111-fdc13579128a%40sessionmgr102&bquery=' + search + '&bdata=JnR5cGU9MCZzZWFyY2hNb2RlPUFuZCZzaXRlPWVkcy1saXZl'
-    # script = 'window.open("'+url+'");'
-    # driver.execute_script(script)
 
 search = input("輸入你想查詢的書目: ")
 login(search)
